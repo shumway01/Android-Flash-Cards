@@ -1,0 +1,15 @@
+Release Notes:
+
+Version 0.2:
+	Added v7-appcompat library to support API versions > 2.1
+	Revised AndroidManifest.xml to specify parent Activities via meta-data
+	Modified several layout files to change textPositionStart/End to textPositionLeft/Right
+		for backwards compatibility
+	Moved calls to setHasOptionsMenu to end of onCreateView since this apparently triggers
+		immediate create of options menus in older releases, causing problems when
+		onCreateOptionsMenu makes assumptions about what has been constructed. This fixes
+		a crash when viewing the card deck in 4.1 and older.
+	Added version info to preferences	
+		
+Version 0.1:
+	Release to Casey

@@ -1,0 +1,44 @@
+Deck Editor Screen
+	Allow tags to be renamed
+	
+Filebrowser
+	Not prepending / to paths
+	
+Tag rename
+	go through cards and change old name to new name
+	need to retain old name in UI
+
+DeckEditorActivity
+	mDeck
+	DeckChangeListener.onDeckChanged(deck)
+	
+	DeckPropertiesFragment
+	CardListFragment
+		register as CardListChangedListener
+		onCardListChanged? redisplay list (list as argument to callback?)
+		register as listener with activity for card set changes, individual card change
+		CreateCardActivity
+			CardPropertiesFragment
+				when card is committed, must be added to mDeck in activity
+				Get calling activity, invoke its hook or callback method
+				then propagated back to CardListFragment's adapter
+				
+	Unsaved changes
+				
+Fix/verify savedInstanceState on all Activities and Fragments
+	UI state (e.g., selected tab) and state of underlying objects
+	
+Deck management service? Bound service
+
+Define a cleaner way of getting deck and card information back and forth between:
+	Multiple "chained" activities
+	Activities and their user interface components
+	
+Define rules for interaction patterns
+	Only activities manipulate card decks and cards (using data passed up from UI)
+			
+GridLauncher	
+	Need collection of generic icons for decks (display icon and name)
+		Math, English, etc.
+		
+Search function in CardListFragment

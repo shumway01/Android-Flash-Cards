@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.thehappypc.ui.CheckableListItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/launcherIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/launcherSelect"
+	    android:contentDescription="@null"
+	    android:gravity="center|center_vertical"
+        android:src="@drawable/ic_launcher_deck" />
+
+    <TextView
+        android:id="@+id/launcherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_below="@id/launcherIcon"
+	    android:layout_toRightOf="@id/launcherSelect"
+	    android:ellipsize="end"
+	    android:gravity="center|center_vertical"
+	    android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/launcherSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/launcherIcon"
+        android:layout_alignParentLeft="true"
+        android:gravity="center|center_vertical" />
+    
+</com.thehappypc.ui.CheckableListItem>

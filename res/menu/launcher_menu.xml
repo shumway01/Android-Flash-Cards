@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.thehappypc.flashcards.DeckChooserActivity" >
+
+    <item
+        android:id="@+id/menu_create_deck"
+	    android:title="@string/menu_create_deck"
+	    android:icon="@drawable/ic_action_create_deck"
+   	    android:alphabeticShortcut="c"
+        android:showAsAction="always"
+        android:orderInCategory="10" >        
+    </item>
+    
+    <item
+        android:id="@+id/menu_import_deck"
+        android:title="@string/menu_import_deck"
+   	    android:alphabeticShortcut="i"
+        android:showAsAction="never"
+        android:orderInCategory="20" >        
+    </item>
+    
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+   	    android:alphabeticShortcut="p"
+        android:showAsAction="never"
+        android:orderInCategory="100" >        
+    </item>
+    
+</menu>

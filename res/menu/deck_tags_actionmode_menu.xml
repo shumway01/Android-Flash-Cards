@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_create_tag"
+	    android:title="@string/menu_create_tag"
+	    android:icon="@drawable/ic_action_create_tag"
+   	    android:alphabeticShortcut="c"
+        android:showAsAction="ifRoom"
+        android:orderInCategory="10" >        
+    </item>
+    
+    <!-- The DeckPropertiesFragment programmatically displays or hides this
+         item depending on whether one or more tags are checked -->
+    <item
+        android:id="@+id/menu_delete_tag"
+        android:title="@string/menu_delete_tag"
+        android:orderInCategory="20"
+        android:showAsAction="never">
+    </item>
+    
+    <item
+        android:id="@+id/menu_delete_tags"
+        android:title="@string/menu_delete_tags"
+        android:orderInCategory="20"
+        android:showAsAction="never">
+    </item>
+
+</menu>

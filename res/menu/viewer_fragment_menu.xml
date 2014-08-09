@@ -1,0 +1,63 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/menu_flip"
+	    android:alphabeticShortcut="h"
+	    android:orderInCategory="5"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_flip"
+	    android:title="@string/flip" />
+    
+    <!-- The DeckViewerFragment will determine if the hint or explanation
+    	 menu items should be displayed, depending on active preferences
+    	 and whether the question or answer is currently displayed. -->
+    <item
+        android:id="@+id/menu_hint"
+	    android:alphabeticShortcut="h"
+	    android:orderInCategory="10"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_lightbulb"
+	    android:title="@string/hint" />
+    <item
+        android:id="@+id/menu_explain"
+	    android:alphabeticShortcut="e"
+	    android:orderInCategory="10"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_lightbulb"
+	    android:title="@string/explanation" />
+    
+    <!-- The DeckViewerFragment will determine if the scoring buttons should
+    	 be displayed, depending on active preferences and whether the answer
+    	 is currently displayed. -->
+    <item
+	    android:id="@+id/menu_correct"
+	    android:alphabeticShortcut="c"
+	    android:orderInCategory="40"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_correct"
+	    android:title="@string/correct" />
+    <item
+	    android:id="@+id/menu_guess"
+	    android:alphabeticShortcut="g"
+	    android:orderInCategory="50"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_guess"
+	    android:title="@string/guess" />
+    <item
+	    android:id="@+id/menu_wrong"
+	    android:alphabeticShortcut="i"
+	    android:orderInCategory="60"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_incorrect"
+	    android:title="@string/wrong" />
+    
+    <!-- The DeckViewerFragment will determine if the advance button should
+    	 be displayed based on whether scoring is disabled in the active preferences -->
+    <item
+	    android:id="@+id/menu_next"
+	    android:alphabeticShortcut="n"
+	    android:orderInCategory="90"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_next"
+	    android:title="@string/next" />
+</menu>

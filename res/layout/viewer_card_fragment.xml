@@ -1,0 +1,73 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_viewer_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".DeckViewerCardFragment" >
+
+    <ViewFlipper
+        android:id="@+id/qaSwitcherView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:padding="@dimen/activity_default_padding" >
+        
+        <LinearLayout
+            android:id="@+id/questionChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/questionHeader"
+		        style="@style/SeparatorTextViewStyle"
+                android:text="@string/question"/>
+                
+			<View
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/list_divider" />
+		
+            <TextView
+                android:id="@+id/questionView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/answerChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/answerHeader"
+		        style="@style/SeparatorTextViewStyle"
+                android:text="@string/answer" />
+            
+			<View
+			    android:layout_width="match_parent"
+			    android:layout_height="1dp"
+			    android:background="@color/list_divider" />
+		
+       		<TextView
+			    android:id="@+id/answerView"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="@dimen/activity_vertical_margin"
+			    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+			    android:layout_marginRight="@dimen/activity_horizontal_margin"
+			    android:layout_marginTop="@dimen/activity_vertical_margin"
+			    android:text="" />
+       		
+       		</LinearLayout>
+		
+	</ViewFlipper>
+
+</ScrollView>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_default_padding" >
+    
+	<ScrollView
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="2" >
+	
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    
+		    <LinearLayout
+		        android:id="@+id/questionContainer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		        
+			    <TextView
+			        android:id="@+id/questionTitle"
+			        style="@style/SeparatorTextViewStyle"
+			        android:text="@string/question" />
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/list_divider" />
+			
+			   	<EditText
+			   	    android:id="@+id/questionEditText"
+			   	    android:layout_width="match_parent"
+			   	    android:layout_height="wrap_content"
+			   	    android:ems="10"
+			   	    android:hint="@string/question_hint"
+			   	    android:inputType="textMultiLine" />
+			        		        
+			    </LinearLayout>
+		
+		    <LinearLayout
+		        android:id="@+id/hintContainer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+		    		
+			    <TextView
+			        android:id="@+id/hintTitle"
+			        style="@style/SeparatorTextViewStyle"
+			        android:text="@string/hint" />
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/list_divider" />
+			
+			   	<EditText
+			   	    android:id="@+id/hintEditText"
+			   	    android:layout_width="match_parent"
+			   	    android:layout_height="wrap_content"
+			   	    android:ems="10"
+			   	    android:hint="@string/hint_hint"
+			   	    android:inputType="textMultiLine" />
+			   	
+		   	</LinearLayout>
+		
+		    <LinearLayout
+		        android:id="@+id/answerContainer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+			   	
+	   			<TextView
+				    android:id="@+id/answerTitle"
+				    style="@style/SeparatorTextViewStyle"
+				    android:text="@string/answer" />
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/list_divider" />
+			
+				<EditText
+				    android:id="@+id/answerEditText"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:ems="10"
+				    android:hint="@string/answer_hint"
+				    android:inputType="textMultiLine" />
+			</LinearLayout>
+			
+		    <LinearLayout
+		        android:id="@+id/explanationContainer"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical" >
+				
+	   			<TextView
+				    android:id="@+id/explanationTitle"
+				    style="@style/SeparatorTextViewStyle"
+				    android:text="@string/explanation" />
+			
+				<View
+				    android:layout_width="match_parent"
+				    android:layout_height="1dp"
+				    android:background="@color/list_divider" />
+			
+				<EditText
+				    android:id="@+id/explanationEditText"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:ems="10"
+				    android:hint="@string/explanation_hint"
+				    android:inputType="textMultiLine" />
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</ScrollView>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:orientation="vertical"
+	    android:layout_weight="1" >
+		
+		<TextView
+		    android:id="@+id/tagTitle"
+		    style="@style/SeparatorTextViewStyle"
+		    android:text="@string/tags" />
+
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/list_divider" />
+	
+		<GridView
+		    android:id="@+id/tagGridView"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="14dp"
+		    android:numColumns="auto_fit" >
+		</GridView>
+					
+	</LinearLayout>
+		
+</LinearLayout>

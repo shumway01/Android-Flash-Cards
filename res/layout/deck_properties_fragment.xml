@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_default_padding" >
+
+    <TextView
+        android:id="@+id/nameTitle"
+        style="@style/SeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:text="@string/deck_name" />
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignBottom="@+id/nameTitle"
+	    android:layout_alignLeft="@+id/nameTitle"
+	    android:background="@color/list_divider" />
+
+   	<EditText
+	    android:id="@+id/nameView"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/nameTitle"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@+id/nameTitle"
+	    android:ems="10"
+	    android:hint="@string/name"
+	    android:inputType="textMultiLine" />
+    
+	<TextView
+	    android:id="@+id/tagTitle"
+	    style="@style/SeparatorTextViewStyle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/nameView"
+	    android:layout_below="@+id/nameView"
+	    android:layout_marginTop="14dp"
+	    android:paddingLeft="8dip"
+	    android:paddingRight="8dip"
+	    android:text="@string/tags" />
+
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignBottom="@+id/tagTitle"
+	    android:layout_alignLeft="@+id/tagTitle"
+	    android:background="@color/list_divider" />
+
+	<GridView
+	    android:id="@+id/deckTagGridView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/tagTitle"
+	    android:layout_centerHorizontal="true"
+		android:numColumns="auto_fit"
+	    android:layout_marginTop="14dp"
+	    android:scrollbars="vertical" />
+
+</RelativeLayout>

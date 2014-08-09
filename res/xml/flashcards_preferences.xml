@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <PreferenceCategory
+    	android:title="@string/pref_title_general"
+    	android:key="pref_key_viewer"
+    	android:persistent="false">
+    	
+	    	<CheckBoxPreference
+		    android:title="@string/pref_title_viewer_hints"
+		    android:summary="@string/pref_summary_viewer_hints"
+		    android:key="@string/pref_key_enable_hints"
+		    android:defaultValue="false"/>
+		
+		<CheckBoxPreference
+		    android:title="@string/pref_title_viewer_explanations"
+		    android:summary="@string/pref_summary_viewer_explanations"
+		    android:key="@string/pref_key_enable_explanations"
+		    android:defaultValue="false"/>
+		
+	</PreferenceCategory>
+
+    <PreferenceCategory
+    	android:title="@string/pref_title_viewer"
+    	android:key="pref_key_viewer"
+    	android:persistent="false">
+    	
+        <CheckBoxPreference
+            android:title="@string/pref_title_viewer_shuffle"
+            android:summary="@string/pref_summary_viewer_shuffle"
+            android:key="@string/pref_key_enable_auto_shuffle"
+			android:defaultValue="true"/>
+        
+        <CheckBoxPreference
+            android:title="@string/pref_title_viewer_scoring"
+            android:summary="@string/pref_summary_viewer_scoring"
+            android:key="@string/pref_key_enable_scoring"
+			android:defaultValue="false"/>
+        
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+    	android:title="@string/pref_title_developer"
+    	android:key="pref_key_developer"
+    	android:persistent="false">
+    	
+        <CheckBoxPreference
+            android:title="@string/pref_title_enable_developer"
+            android:summary="@string/pref_summary_enable_developer"
+            android:key="@string/pref_key_enable_developer"
+			android:defaultValue="false"/>
+        
+        <Preference
+            android:title="@string/pref_title_version"
+            android:key="@string/pref_key_version"
+            android:summary="@string/pref_summary_version"/>
+        
+        <com.thehappypc.flashcards.preferences.DeleteDatabaseDialogPreference
+            android:title="@string/pref_title_delete_database"
+            android:summary="@string/pref_summary_delete_database"
+            android:key="@string/pref_key_delete_database"
+            android:positiveButtonText="@string/delete"
+            android:negativeButtonText="@string/cancel"
+            android:dialogTitle="@string/pref_title_delete_database"
+            android:dialogMessage="@string/pref_summary_delete_database"
+			android:defaultValue="false"/>
+        
+    </PreferenceCategory>
+    
+</PreferenceScreen>

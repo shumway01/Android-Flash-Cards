@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+	    android:id="@+id/menu_modify_card"
+        android:showAsAction="always"
+	    android:alphabeticShortcut="m"
+	    android:orderInCategory="20"
+        android:icon="@drawable/ic_action_modify"
+	    android:title="@string/menu_modify_card" >
+    </item>
+    <!-- Not implemented yet
+    <item
+	    android:id="@+id/menu_change_tags"
+        android:showAsAction="never"
+	    android:alphabeticShortcut="t"
+	    android:orderInCategory="50"
+        android:icon="@drawable/ic_action_change_tags"
+	    android:title="@string/menu_change_tags" >
+    </item>
+     -->
+    <item
+        android:id="@+id/menu_delete_card"
+        android:title="@string/menu_delete_card"
+        android:icon="@drawable/ic_action_delete"
+	    android:orderInCategory="80"
+        android:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/menu_delete_cards"
+        android:title="@string/menu_delete_cards"
+        android:icon="@drawable/ic_action_delete"
+	    android:orderInCategory="80"
+        android:showAsAction="always" >
+    </item>
+</menu>

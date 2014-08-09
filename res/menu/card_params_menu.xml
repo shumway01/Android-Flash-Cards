@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+	    android:id="@+id/menu_discard"
+	    android:alphabeticShortcut="q"
+	    android:showAsAction="always"
+	    android:title="@string/menu_cancel"
+	    android:icon="@drawable/ic_action_cancel" />
+    <item
+	    android:id="@+id/menu_save"
+	    android:alphabeticShortcut="s"
+	    android:showAsAction="always"
+	    android:title="@string/menu_save"
+	    android:icon="@drawable/ic_menu_done_holo_dark" />
+    <item
+	    android:id="@+id/menu_save_next"
+	    android:showAsAction="always"
+	    android:alphabeticShortcut="n"
+	    android:title="@string/menu_next"
+	    android:icon="@drawable/ic_action_new" />
+</menu>

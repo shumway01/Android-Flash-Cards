@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <!-- The LauncherActivity programmatically displays or hides this
+         item depending on whether one or more decks are checked -->
+    <item
+        android:id="@+id/menu_modify_deck"
+        android:title="@string/menu_modify_deck"
+        android:icon="@drawable/ic_action_modify"
+        android:orderInCategory="20"
+        android:showAsAction="always">
+    </item>
+    
+    <!-- The LauncherActivity programmatically selects the appropriate
+         menu item and hides the other one -->
+    <item
+        android:id="@+id/menu_export_deck"
+        android:title="@string/menu_export_deck"
+        android:icon="@drawable/ic_action_export"
+        android:orderInCategory="40"
+        android:showAsAction="ifRoom">
+    </item>
+    <item
+        android:id="@+id/menu_export_decks"
+        android:title="@string/menu_export_decks"
+        android:icon="@drawable/ic_action_export"
+        android:orderInCategory="40"
+        android:showAsAction="ifRoom">
+    </item>
+    
+    <!-- The LauncherActivity programmatically selects the appropriate
+         menu item and hides the other one -->
+    <item
+        android:id="@+id/menu_delete_deck"
+        android:title="@string/menu_delete_deck"
+        android:icon="@drawable/ic_action_delete"
+        android:orderInCategory="50"
+        android:showAsAction="ifRoom">
+    </item>
+    
+    <item
+        android:id="@+id/menu_delete_decks"
+        android:title="@string/menu_delete_decks"
+        android:icon="@drawable/ic_action_delete"
+        android:orderInCategory="50"
+        android:showAsAction="ifRoom">
+    </item>
+    
+</menu>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+	    android:id="@+id/menu_export"
+        android:orderInCategory="20"
+	    android:alphabeticShortcut="x"
+        android:showAsAction="never"
+	    android:title="@string/menu_export_deck" />
+    <item
+	    android:id="@+id/menu_discard"
+        android:orderInCategory="90"
+	    android:alphabeticShortcut="q"
+        android:showAsAction="never"
+	    android:title="@string/menu_discard" />
+    <item
+	    android:id="@+id/menu_settings"
+	    android:alphabeticShortcut="s"
+	    android:orderInCategory="100"
+        android:showAsAction="never"
+	    android:title="@string/menu_settings" />
+</menu>
